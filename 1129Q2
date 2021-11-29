@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(){
+    int input;
+    scanf("%c",&input);
+    int *alp = &input;
+    if(input == 'a'||'A')
+    {
+        for(int i=0; i<26 ;i++){
+            printf("%c",*alp+i);
+            printf("\t");
+        }
+    }
+}
